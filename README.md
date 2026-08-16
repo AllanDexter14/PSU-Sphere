@@ -67,11 +67,4 @@ Welcome to the repository for **PSU-Sphere**! We are 3rd-year Computer Science s
 ![Organization Roster View](https://via.placeholder.com/600x300?text=Org+Members+Preview)
 *Organization member registry detailing joined dates and academic affiliations[cite: 1].*
 
----
-
-## Getting Started
-
-### Prerequisites
-* Python 3.x[cite: 1]
-* Virtualenv[cite: 1]
 
