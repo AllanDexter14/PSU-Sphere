@@ -2,7 +2,7 @@
 
 <p align="center">
   <b>Student Organization & Campus Management Portal</b><br>
-  Developed by Allan Dexter P. Cuizion and Jhon Grover Longsud
+  Developed by Allan Dexter P. Cuizion and Jhon Grover Longsud <br>
   BS in Computer Science 3rd Year Block 1 at Palawan State University
 </p>
 
