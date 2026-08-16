@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="https://via.placeholder.com/150?text=PSU-Sphere+Logo" alt="PSU-Sphere Logo" width="150">
-</p>
-
 <h1 align="center">PSU-Sphere</h1>
 
 <p align="center">
@@ -17,16 +13,16 @@
 ---
 
 ## Short Description
-PSU-Sphere is a Django-based web application tailored for Palawan State University to manage student organizations, colleges, academic programs, students, and organization memberships[cite: 1]. It provides an organized, centralized system to store and manage campus entities directly through a customized Django admin interface[cite: 1].
+PSU-Sphere is a Django-based web application tailored for Palawan State University to manage student organizations, colleges, academic programs, students, and organization memberships. It provides an organized, centralized system to store and manage campus entities directly through a customized Django admin interface.
 
 ---
 
 ## List of Features
-* **Academic Unit Management:** Manage colleges and their corresponding degree programs[cite: 1].
-* **Student Information Directory:** Store student profiles complete with student IDs, full names, and assigned academic programs[cite: 1].
-* **Organizations & Membership Tracking:** Manage student organizations and record active memberships along with the exact date a student joined[cite: 1].
-* **Customized Admin Panel:** Search students by last name and first name, filter records by college, and view a student's academic program directly within membership listings[cite: 1].
-* **Automated Data Seeding:** Generate sample records using the `Faker` library for rapid testing and development[cite: 1].
+* **Academic Unit Management:** Manage colleges and their corresponding degree programs.
+* **Student Information Directory:** Store student profiles complete with student IDs, full names, and assigned academic programs.
+* **Organizations & Membership Tracking:** Manage student organizations and record active memberships along with the exact date a student joined.
+* **Customized Admin Panel:** Search students by last name and first name, filter records by college, and view a student's academic program directly within membership listings.
+* **Automated Data Seeding:** Generate sample records using the `Faker` library for rapid testing and development.
 
 ---
 
