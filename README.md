@@ -1,70 +1,65 @@
-<p align="center">
-  <img src="https://via.placeholder.com/150?text=PSU-Sphere+Logo" alt="PSU-Sphere Logo" width="150">
-</p>
-
 <h1 align="center">PSU-Sphere</h1>
 
 <p align="center">
   <b>Student Organization & Campus Management Portal</b><br>
-  Developed by BS Computer Science students at Palawan State University
+  Developed by Allan Dexter P. Cuizion and Jhon Grover Longsud <br>
+  BS in Computer Science 3rd Year Block 1 at Palawan State University
 </p>
 
+---
 
-Welcome to the repository for **PSU-Sphere**! We are 3rd-year Computer Science students at Palawan State University working with Django to build practical campus management applications. This platform serves as a centralized hub to track colleges, academic programs, student organizations, and active memberships across campus.
+## Project Name
+**PSU-Sphere**
 
 ---
 
-### 👥 Who We Are
-
-* **Allan Dexter P. Cuizon** | [@AllanDexter14](https://github.com/AllanDexter14)
-* **Jhon Grover Longsud** | [@Boben19](https://github.com/Boben19)
-
-🎓 **Education:** BS in Computer Science (3rd Year), Palawan State University  
-📍 **Location:** Puerto Princesa City, Palawan  
+## Short Description
+PSU-Sphere is a Django-based web application tailored for Palawan State University to manage student organizations, colleges, academic programs, students, and organization memberships. It provides an organized, centralized system to store and manage campus entities directly through a customized Django admin interface.
 
 ---
 
-### 💻 What We Do Together
-
-* **Full-Stack Django Development:** Architecting relational database models, views, and admin workflows.
-* **Database Management:** Designing structured schema relationships using ForeignKeys and custom data seeding pipelines.
-* **Collaboration Workflows:** Utilizing Git version control, virtual environments, and standard deployment practices.
-
----
-
-### 🛠 Tech & Tools
-
-* **Backend Framework:** Python 3, Django
-* **Database & Libraries:** SQLite, Faker (for mock data generation)
-* **Version Control:** Git & GitHub
-* **Environment:** VS Code, Virtualenv
+## List of Features
+* **Academic Unit Management:** Manage colleges and their corresponding degree programs.
+* **Student Information Directory:** Store student profiles complete with student IDs, full names, and assigned academic programs.
+* **Organizations & Membership Tracking:** Manage student organizations and record active memberships along with the exact date a student joined.
+* **Customized Admin Panel:** Search students by last name and first name, filter records by college, and view a student's academic program directly within membership listings.
+* **Automated Data Seeding:** Generate sample records using the `Faker` library for rapid testing and development.
 
 ---
 
-## Project Description
+## Authors
 
-**PSU-Sphere** is a web backend application tailored for Palawan State University to streamline student organization management. Built on Django, it models complex relationships between academic units (Colleges & Programs), student entities, and campus student organizations. It features a customized administrative interface for rapid searching, filtering, and data management, alongside custom seed scripts to populate large-scale sample records during development.
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="https://github.com/AllanDexter14.png" width="150" style="border-radius: 50%;" alt="Allan Dexter P. Cuizon"><br />
+      <br />
+      <b>Name:</b> Allan Dexter P. Cuizon<br />
+      <b>Email:</b> 202480112@psu.palawan.edu.ph<br /><br />
+      <a href="https://github.com/AllanDexter14">
+        <img src="https://raw.githubusercontent.com/gauravghongde/social-icons/master/PNG/Color/Github.png" width="30" height="30" alt="GitHub">
+      </a>
+      <a href="https://www.facebook.com/allandexter.cuizon">
+        <img src="https://raw.githubusercontent.com/gauravghongde/social-icons/master/PNG/Color/Facebook.png" width="30" height="30" alt="Facebook">
+      </a>
+    </td>
+    <td align="center" width="50%">
+      <img src="https://github.com/Boben19.png" width="150" style="border-radius: 50%;" alt="Jhon Grover Longsud"><br />
+      <br />
+      <b>Name:</b> Jhon Grover Longsud<br />
+      <b>Email:</b> jhongroverlongsud2005@gmail.com<br /><br />
+      <a href="https://github.com/Boben19">
+        <img src="https://raw.githubusercontent.com/gauravghongde/social-icons/master/PNG/Color/Github.png" width="30" height="30" alt="GitHub">
+      </a>
+      <a href="https://www.facebook.com/jhongroverlongsud19/">
+        <img src="https://raw.githubusercontent.com/gauravghongde/social-icons/master/PNG/Color/Facebook.png" width="30" height="30" alt="Facebook">
+      </a>
+    </td>
+  </tr>
+</table>
 
 ---
 
-## Features
-
-* **Relational Academic Data Models:** Structured mapping for Colleges, Academic Programs, Organizations, Students, and Memberships.
-* **Customized Django Admin Panel:** Customized list displays, search vectors, and inline relationship views for easy site administration.
-* **Automated Data Seeding:** Integrated CLI command leveraging `Faker` to quickly generate realistic student IDs, localized names, and organization rosters.
-* **Auditing Fields:** Standardized base model tracking creation and modification timestamps.
-
----
-
-## Screen Captures
-
-![Django Admin Overview](https://via.placeholder.com/600x300?text=Admin+Dashboard+Preview)
-*Customized Django Admin dashboard managing student profiles and organization memberships.*
-
-![Student Records View](https://via.placeholder.com/600x300?text=Student+List+Preview)
-*Student list view featuring custom search filters by student ID, name, and program.*
-
-![Organization Roster View](https://via.placeholder.com/600x300?text=Org+Members+Preview)
-*Organization member registry detailing joined dates and academic affiliations.*
-
-
+### 📬 Project Repository
+Check out the source code and updates here:  
+👉 [PSU-Sphere Repository](https://github.com/AllanDexter14/PSU-Sphere)
