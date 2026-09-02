@@ -18,6 +18,7 @@ class OrganizationList(ListView):
     context_object_name = 'organization'
     template_name = 'org_list.html'
     paginate_by = 5
+    ordering = ["college__college_name","name"] 
 
     def get_queryset(self):
         qs = super().get_queryset()
@@ -121,6 +122,13 @@ class ProgramList(ListView):
     template_name = 'program_list.html'
     paginate_by = 5
 
+    def get_ordering(self):
+        allowed = ["prog_name", "college__college_name"]
+        sort_by = self.request.GET.get("sort_by")
+        if sort_by in allowed:
+            return sort_by
+        return "prog_name"    
+
 class ProgramCreateView(CreateView):
     model = Program
     form_class = ProgramForm
@@ -137,3 +145,27 @@ class ProgramDeleteView(DeleteView):
     model = Program
     template_name = 'program_del.html'
     success_url = reverse_lazy('program-list')
+
+class HomePageView(ListView):
+    model = Organization
+    context_object_name = 'home'
+    template_name = "home.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["total_students"] = Student.objects.count()
+
+        today = timezone.now().date()
+        count = (
+            OrgMember.objects.filter(
+                date_joined__year=today.year
+            )
+            .values("student")
+            .distinct()
+            .count()
+        )
+
+        context["students_joined_this_year"] = count
+        return context  
+
+
