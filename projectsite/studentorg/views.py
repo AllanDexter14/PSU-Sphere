@@ -128,6 +128,13 @@ class OrgMemberList(ListView):
             )
         return qs
 
+    def get_ordering(self):
+        allowed = ["student__lastname", "date_joined"]
+        sort_by = self.request.GET.get("sort_by")
+        if sort_by in allowed:
+            return sort_by
+        return "student__lastname"
+
 class OrgMemberCreateView(CreateView):
     model = OrgMember
     form_class = OrgMemberForm
