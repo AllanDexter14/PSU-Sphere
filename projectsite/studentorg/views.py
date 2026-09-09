@@ -6,12 +6,8 @@ from studentorg.forms import OrganizationForm, CollegeForm, StudentForm, OrgMemb
 from django.urls import reverse_lazy
 from django.db.models import Q
 from django.utils import timezone
+from django.contrib.auth.mixins import LoginRequiredMixin
 
-
-class HomePageView(ListView):
-    model = Organization
-    context_object_name = 'home'
-    template_name = "home.html"
 
 class OrganizationList(ListView):
     model = Organization
@@ -189,7 +185,7 @@ class ProgramDeleteView(DeleteView):
     template_name = 'program_del.html'
     success_url = reverse_lazy('program-list')
 
-class HomePageView(ListView):
+class HomePageView(LoginRequiredMixin, ListView):
     model = Organization
     context_object_name = 'home'
     template_name = "home.html"
